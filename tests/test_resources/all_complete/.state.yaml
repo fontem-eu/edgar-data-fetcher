@@ -1,0 +1,12 @@
+reference:
+  completed_at: '2026-03-19T10:00:00Z'
+  file_count: 4
+  status: complete
+companyfacts:
+  completed_at: '2026-03-19T10:30:00Z'
+  file_count: 12000
+  status: complete
+submissions:
+  completed_at: '2026-03-19T11:00:00Z'
+  file_count: 12000
+  status: complete

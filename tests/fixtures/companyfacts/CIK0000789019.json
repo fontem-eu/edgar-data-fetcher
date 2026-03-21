@@ -1,0 +1,109 @@
+{
+  "cik": 789019,
+  "entityType": "operating",
+  "sic": "7372",
+  "sic_description": "Prepackaged Software",
+  "insiderTransactionForOwnerExists": 0,
+  "insiderTransactionForIssuerExists": 1,
+  "name": "MICROSOFT CORP",
+  "tickers": ["MSFT"],
+  "exchanges": ["Nasdaq"],
+  "ein": "911144442",
+  "description": "",
+  "website": "",
+  "investorWebsite": "",
+  "category": "Large accelerated filer",
+  "fiscalYearEnd": "0630",
+  "stateOfIncorporation": "WA",
+  "stateOfIncorporationDescription": "WA",
+  "addresses": {
+    "mailing": {"street1": "One Microsoft Way", "city": "Redmond", "stateOrCountry": "WA", "zipCode": "98052-6399"},
+    "business": {"street1": "One Microsoft Way", "city": "Redmond", "stateOrCountry": "WA", "zipCode": "98052-6399"}
+  },
+  "phone": "4258828080",
+  "flags": "",
+  "filings": {"recent": {"accessionNumber": [], "filingDate": [], "reportDate": [], "acceptanceDateTime": [], "act": [], "form": [], "fileNumber": [], "filmNumber": [], "items": [], "size": [], "isXBRL": [], "isInlineXBRL": [], "primaryDocument": [], "primaryDocDescription": []}, "files": []},
+  "facts": {
+    "dei": {
+      "EntityCommonStockSharesOutstanding": {
+        "label": "Entity Common Stock, Shares Outstanding",
+        "description": "Indicate number of shares outstanding.",
+        "units": {
+          "shares": [
+            {"end": "2023-06-30", "val": 7430000000, "accn": "0000950170-23-035122", "fy": 2023, "fp": "FY", "form": "10-K", "filed": "2023-07-27"},
+            {"end": "2022-06-30", "val": 7496000000, "accn": "0000950170-22-018033", "fy": 2022, "fp": "FY", "form": "10-K", "filed": "2022-07-28"},
+            {"end": "2021-06-30", "val": 7547000000, "accn": "0001564590-21-039151", "fy": 2021, "fp": "FY", "form": "10-K", "filed": "2021-07-29"}
+          ]
+        }
+      }
+    },
+    "us-gaap": {
+      "Revenues": {
+        "label": "Revenues",
+        "description": "Amount of revenue recognized from goods sold, services rendered.",
+        "units": {
+          "USD": [
+            {"end": "2023-06-30", "val": 211915000000, "accn": "0000950170-23-035122", "fy": 2023, "fp": "FY", "form": "10-K", "filed": "2023-07-27"},
+            {"end": "2022-06-30", "val": 198270000000, "accn": "0000950170-22-018033", "fy": 2022, "fp": "FY", "form": "10-K", "filed": "2022-07-28"},
+            {"end": "2021-06-30", "val": 168088000000, "accn": "0001564590-21-039151", "fy": 2021, "fp": "FY", "form": "10-K", "filed": "2021-07-29"}
+          ]
+        }
+      },
+      "NetIncomeLoss": {
+        "label": "Net Income (Loss) Attributable to Parent",
+        "description": "The portion of profit or loss for the period, net of income taxes.",
+        "units": {
+          "USD": [
+            {"end": "2023-06-30", "val": 72361000000, "accn": "0000950170-23-035122", "fy": 2023, "fp": "FY", "form": "10-K", "filed": "2023-07-27"},
+            {"end": "2022-06-30", "val": 72738000000, "accn": "0000950170-22-018033", "fy": 2022, "fp": "FY", "form": "10-K", "filed": "2022-07-28"},
+            {"end": "2021-06-30", "val": 61271000000, "accn": "0001564590-21-039151", "fy": 2021, "fp": "FY", "form": "10-K", "filed": "2021-07-29"}
+          ]
+        }
+      },
+      "Assets": {
+        "label": "Assets",
+        "description": "Sum of the carrying amounts as of the balance sheet date of all assets.",
+        "units": {
+          "USD": [
+            {"end": "2023-06-30", "val": 411976000000, "accn": "0000950170-23-035122", "fy": 2023, "fp": "FY", "form": "10-K", "filed": "2023-07-27"},
+            {"end": "2022-06-30", "val": 364840000000, "accn": "0000950170-22-018033", "fy": 2022, "fp": "FY", "form": "10-K", "filed": "2022-07-28"},
+            {"end": "2021-06-30", "val": 333779000000, "accn": "0001564590-21-039151", "fy": 2021, "fp": "FY", "form": "10-K", "filed": "2021-07-29"}
+          ]
+        }
+      },
+      "StockholdersEquity": {
+        "label": "Stockholders' Equity Attributable to Parent",
+        "description": "Total of all stockholders' equity items.",
+        "units": {
+          "USD": [
+            {"end": "2023-06-30", "val": 206223000000, "accn": "0000950170-23-035122", "fy": 2023, "fp": "FY", "form": "10-K", "filed": "2023-07-27"},
+            {"end": "2022-06-30", "val": 166542000000, "accn": "0000950170-22-018033", "fy": 2022, "fp": "FY", "form": "10-K", "filed": "2022-07-28"},
+            {"end": "2021-06-30", "val": 141988000000, "accn": "0001564590-21-039151", "fy": 2021, "fp": "FY", "form": "10-K", "filed": "2021-07-29"}
+          ]
+        }
+      },
+      "NetCashProvidedByUsedInOperatingActivities": {
+        "label": "Net Cash Provided by (Used in) Operating Activities",
+        "description": "Amount of cash inflow (outflow) from operating activities.",
+        "units": {
+          "USD": [
+            {"end": "2023-06-30", "val": 87582000000, "accn": "0000950170-23-035122", "fy": 2023, "fp": "FY", "form": "10-K", "filed": "2023-07-27"},
+            {"end": "2022-06-30", "val": 89035000000, "accn": "0000950170-22-018033", "fy": 2022, "fp": "FY", "form": "10-K", "filed": "2022-07-28"},
+            {"end": "2021-06-30", "val": 76740000000, "accn": "0001564590-21-039151", "fy": 2021, "fp": "FY", "form": "10-K", "filed": "2021-07-29"}
+          ]
+        }
+      },
+      "EarningsPerShareBasic": {
+        "label": "Earnings Per Share, Basic",
+        "description": "The amount of net income or loss for the period per each share.",
+        "units": {
+          "USD/shares": [
+            {"end": "2023-06-30", "val": 9.72, "accn": "0000950170-23-035122", "fy": 2023, "fp": "FY", "form": "10-K", "filed": "2023-07-27"},
+            {"end": "2022-06-30", "val": 9.70, "accn": "0000950170-22-018033", "fy": 2022, "fp": "FY", "form": "10-K", "filed": "2022-07-28"},
+            {"end": "2021-06-30", "val": 8.12, "accn": "0001564590-21-039151", "fy": 2021, "fp": "FY", "form": "10-K", "filed": "2021-07-29"}
+          ]
+        }
+      }
+    }
+  }
+}
