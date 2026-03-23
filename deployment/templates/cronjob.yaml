@@ -1,0 +1,47 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: edgar-data-init
+  namespace: gmr
+  labels:
+    app: edgar-data-init
+spec:
+  # Run every Sunday at 02:00 UTC
+  schedule: "0 2 * * 0"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      # Allow up to 4 hours for a full first-time download (~5 GB).
+      activeDeadlineSeconds: 14400
+      backoffLimit: 2
+      template:
+        metadata:
+          labels:
+            app: edgar-data-init
+        spec:
+          restartPolicy: OnFailure
+          imagePullSecrets:
+            - name: regcred
+          containers:
+            - name: edgar-data-init
+              image: contribute.void42.internal/golden/edgar-data-fetcher:{{ .Values.version }}
+              imagePullPolicy: Always
+              resources:
+                requests:
+                  cpu: "100m"
+                  memory: "256Mi"
+                limits:
+                  cpu: "2"
+                  memory: "2Gi"
+              env:
+                - name: EDGAR_IDENTITY
+                  value: "bemar-edgar@research.com"
+              volumeMounts:
+                - name: edgar-data
+                  mountPath: /edgar-data
+          volumes:
+            - name: edgar-data
+              persistentVolumeClaim:
+                claimName: edgar-data

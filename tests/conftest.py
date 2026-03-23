@@ -48,19 +48,6 @@ def data_dir(tmp_path: Path) -> Path:
 
 
 @pytest.fixture()
-def data_dir_with_reference(data_dir: Path) -> Path:
-    """
-    A data directory that already contains reference files.
-    Used to test the 'skip if already present' behaviour.
-    """
-    ref_dir = data_dir / "reference"
-    ref_dir.mkdir()
-    src = FIXTURES / "reference" / "company_tickers.json"
-    shutil.copy(src, ref_dir / "company_tickers.json")
-    return data_dir
-
-
-@pytest.fixture()
 def data_dir_with_facts(data_dir: Path) -> Path:
     """
     A data directory pre-populated with the synthetic company facts fixtures.
@@ -71,19 +58,6 @@ def data_dir_with_facts(data_dir: Path) -> Path:
     for src in (FIXTURES / "companyfacts").glob("CIK*.json"):
         shutil.copy(src, facts_dir / src.name)
     return data_dir
-
-
-@pytest.fixture()
-def data_dir_full(data_dir_with_reference: Path, data_dir_with_facts: Path) -> Path:
-    """
-    A data directory that has both reference AND facts pre-populated.
-
-    Both sub-fixtures depend on `data_dir`, which pytest instantiates once per
-    test (function scope).  They therefore receive the same `data_dir` instance
-    and write into the same temporary directory, so returning either one gives
-    the combined result.
-    """
-    return data_dir_with_reference
 
 
 # ---------------------------------------------------------------------------
