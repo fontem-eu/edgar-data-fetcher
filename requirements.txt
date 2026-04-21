@@ -1,5 +1,5 @@
 # Runtime
-edgartools==5.21.1
+edgartools==5.22.0
 pyyaml==6.0.3
 rich==14.3.3
 
