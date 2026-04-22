@@ -4,5 +4,5 @@ pyyaml==6.0.3
 rich==14.3.3
 
 # Tests
-pytest==9.0.2
+pytest==9.0.3
 pytest-mock==3.15.1
