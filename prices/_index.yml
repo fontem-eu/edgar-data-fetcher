@@ -1,0 +1,1000 @@
+AAPL:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ABBV:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ABT:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ACN:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ADBE:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ADI:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ADP:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+AEM:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+AMAT:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+AMD:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+AMGN:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+AMT:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+AMZN:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ANET:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+APH:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+APP:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ARM:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ASML:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ATEYY:
+  earliest_date: null
+  error_count: 1
+  latest_date: null
+  status: no_data
+AVGO:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+AXP:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+AZN:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BA:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BABA:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BAC:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BAESY:
+  earliest_date: null
+  error_count: 1
+  latest_date: null
+  status: no_data
+BBVA:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BHP:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BK:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BKNG:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BLK:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BMO:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BMY:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BN:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BNS:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BP:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BRK-B:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BSX:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BTI:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BUD:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+BX:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+C:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+CAT:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+CB:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+CEG:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+CM:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+CMCSA:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+CME:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+CNQ:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+COF:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+COP:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+COST:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+CRM:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+CRWD:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+CSCO:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+CVS:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+CVX:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+CYATY:
+  earliest_date: null
+  error_count: 1
+  latest_date: null
+  status: no_data
+DE:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+DELL:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+DHR:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+DIS:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+DTEGY:
+  earliest_date: null
+  error_count: 1
+  latest_date: null
+  status: no_data
+DUK:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+E:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ENB:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+EPD:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+EQIX:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+EQNR:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ETN:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+FDX:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+GD:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+GE:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+GEV:
+  earliest_date: '2024-04-03'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+GILD:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+GLD:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+GLW:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+GOOGL:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+GS:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+GSK:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+HCA:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+HD:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+HDB:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+HON:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+HSBC:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+HTHIY:
+  earliest_date: null
+  error_count: 1
+  latest_date: null
+  status: no_data
+HWM:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+IAU:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+IBKR:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+IBM:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+IBN:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ICE:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+INTC:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+INTU:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ISRG:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ITUB:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+JCI:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+JNJ:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+JPM:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+KKR:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+KLAC:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+KO:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+KXIAY:
+  earliest_date: null
+  error_count: 1
+  latest_date: null
+  status: no_data
+LIN:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+LLY:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+LMT:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+LOW:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+LRCX:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+MA:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+MAR:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+MCD:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+MCK:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+MDT:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+MELI:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+META:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+MFG:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+MGCLY:
+  earliest_date: null
+  error_count: 1
+  latest_date: null
+  status: no_data
+MO:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+MRK:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+MRSH:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+MS:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+MSFT:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+MU:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+MUFG:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+NEE:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+NEM:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+NFLX:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+NGG:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+NOC:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+NOW:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+NVDA:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+NVO:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+NVS:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+ORCL:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+PANW:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+PBR:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+PDD:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+PEP:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+PFE:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+PG:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+PGR:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+PH:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+PLD:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+PLTR:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+PM:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+PNC:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+PWR:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+QCOM:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+QQQ:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+RIO:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+RTNTF:
+  earliest_date: null
+  error_count: 1
+  latest_date: null
+  status: no_data
+RTX:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+RY:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SAN:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SAP:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SBUX:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SCCO:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SCHW:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SHEL:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SHOP:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SMFG:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SNDK:
+  earliest_date: '2025-02-13'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SNPS:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SNY:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SO:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SONY:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SPGI:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SPOT:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SPY:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+STX:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+SYK:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+T:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+TD:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+TJX:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+TM:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+TMO:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+TMUS:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+TSLA:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+TT:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+TTE:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+TXN:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+UBER:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+UBS:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+UL:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+UNH:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+UNP:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+UPS:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+USB:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+UTX:
+  earliest_date: null
+  error_count: 1
+  latest_date: null
+  status: no_data
+V:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+VRT:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+VRTX:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+VZ:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+WDC:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+WELL:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+WFC:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+WM:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+WMB:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+WMT:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
+XOM:
+  earliest_date: '2024-03-25'
+  error_count: 0
+  latest_date: '2026-03-20'
+  status: in_progress
