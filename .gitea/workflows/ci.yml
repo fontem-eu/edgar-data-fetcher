@@ -34,8 +34,14 @@ jobs:
         run: |
           pip install --no-cache-dir -r requirements.txt pytest pytest-cov pytest-mock cyclonedx-bom
           python3 -m pytest tests/ -q --cov=. --cov-report=xml:coverage.xml || true
-      - name: SonarQube scan
-        run: npx sonarqube-scanner -Dsonar.host.url=http://sonarqube.sonarqube.svc.cluster.local:9000 -Dsonar.token=${{ secrets.SONAR_TOKEN }}
+      - uses: actions/checkout@v4
+        with:
+          repository: void42/fontem-ci
+          path: .fontem-ci
+          token: ${{ secrets.GMR_CI_READ_TOKEN }}
+      - uses: ./.fontem-ci/actions/sonar-scan
+        with:
+          sonar-token: ${{ secrets.SONAR_TOKEN }}
       - name: Generate SBOM (resolved versions from installed env)
         # `cyclonedx-py environment` walks the resolved venv tree
         # (pinned versions per pip's actual resolution); the older
