@@ -4,7 +4,7 @@
 # Build:  docker build -t edgar-data-init:latest .
 # Run:    docker run -v /your/data:/edgar-data edgar-data-init:latest
 # ──────────────────────────────────────────────────────────────────────────────
-FROM python:3.13-slim
+FROM python:3.14-slim
 
 # --- Non-root user for security -----------------------------------------------
 # The NFS share must allow writes from UID 1000 (appuser).
