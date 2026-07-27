@@ -37,7 +37,7 @@ jobs:
         with:
           repository: void42/fontem-ci
           path: .fontem-ci
-          token: ${{ secrets.GMR_CI_READ_TOKEN }}
+          token: ${{ secrets.CI_READ_TOKEN }}
       - uses: ./.fontem-ci/actions/sonar-scan
         with:
           sonar-token: ${{ secrets.SONAR_TOKEN }}
