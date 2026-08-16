@@ -35,10 +35,10 @@ jobs:
           python3 -m pytest tests/ -q --cov=. --cov-report=xml:coverage.xml || true
       - uses: actions/checkout@v4
         with:
-          repository: void42/fontem-ci
-          path: .fontem-ci
+          repository: void42/ci-actions
+          path: .ci-actions
           token: ${{ secrets.CI_READ_TOKEN }}
-      - uses: ./.fontem-ci/actions/sonar-scan
+      - uses: ./.ci-actions/actions/sonar-scan
         with:
           sonar-token: ${{ secrets.SONAR_TOKEN }}
       - name: Generate SBOM (resolved versions from installed env)
