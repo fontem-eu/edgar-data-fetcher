@@ -1,28 +1,19 @@
-# ──────────────────────────────────────────────────────────────────────────────
-# edgar-data-init  —  SEC EDGAR bulk data downloader
-# ──────────────────────────────────────────────────────────────────────────────
-# Build:  docker build -t edgar-data-init:latest .
-# Run:    docker run -v /your/data:/edgar-data edgar-data-init:latest
-# ──────────────────────────────────────────────────────────────────────────────
-FROM python:3.14-slim
-
-# --- Non-root user for security -----------------------------------------------
-# The NFS share must allow writes from UID 1000 (appuser).
-# On the NFS server: chown 1000:1000 /srv/nfs/edgar-data
-RUN useradd --create-home --shell /bin/bash appuser
-WORKDIR /app
-
-# --- Python dependencies -------------------------------------------------------
+# ── build: venv in the Wolfi -dev image ──────────────────────────────────────
+FROM cgr.void42.internal/chainguard/python:latest-dev AS build
+USER root
+ENV PIP_INDEX_URL=https://nexus.void42.internal/repository/pypi-proxy/simple/ \
+    PIP_TRUSTED_HOST=nexus.void42.internal
+RUN python -m venv /venv
+ENV PATH="/venv/bin:$PATH"
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt && rm requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# --- Application source -------------------------------------------------------
+# ── runtime: distroless Chainguard python; uid 1000 to match NFS ownership ────
+FROM cgr.void42.internal/chainguard/python:latest
+WORKDIR /app
+COPY --from=build /venv /venv
+ENV PATH="/venv/bin:$PATH"
 COPY setup.py .
-
-USER appuser
-
-# --- Runtime ------------------------------------------------------------------
-# --mode full   downloads reference + companyfacts + submissions (~5 GB total)
-# --data-dir    must match the volume mountPath in the CronJob
-# Stages already marked complete in .state.yaml are skipped automatically.
-CMD ["python", "setup.py", "--mode", "full", "--data-dir", "/edgar-data/full"]
+USER 1000
+ENTRYPOINT ["/venv/bin/python"]
+CMD ["setup.py", "--mode", "full", "--data-dir", "/edgar-data/full"]
