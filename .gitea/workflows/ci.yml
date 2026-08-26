@@ -32,7 +32,14 @@ jobs:
           PIP_TRUSTED_HOST: nexus.void42.internal
         run: |
           pip install --no-cache-dir -r requirements.txt pytest pytest-cov pytest-mock cyclonedx-bom
-          python3 -m pytest tests/ -q --cov=. --cov-report=xml:coverage.xml || true
+          # No `|| true`, and the xunit report is regenerated here rather
+          # than read from a stale committed file. When this swallowed its
+          # own failure, a failed run left no coverage.xml behind and the
+          # scan proceeded without it -- SonarQube then recorded no coverage
+          # metric at all, which passes any coverage threshold, because a
+          # condition whose metric is absent is skipped rather than failed.
+          python3 -m pytest tests/ -q \
+            --cov=. --cov-report=xml:coverage.xml --junitxml=test-results.xml
       - uses: actions/checkout@v6
         with:
           repository: void42/ci-actions
