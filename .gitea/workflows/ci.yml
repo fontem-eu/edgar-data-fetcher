@@ -8,7 +8,7 @@ jobs:
   test:
     runs-on: python
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Install deps
         env:
           PIP_INDEX_URL: https://nexus.void42.internal/repository/pypi-proxy/simple/
@@ -25,7 +25,7 @@ jobs:
     needs: test
     runs-on: python
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Install deps + generate coverage
         env:
           PIP_INDEX_URL: https://nexus.void42.internal/repository/pypi-proxy/simple/
@@ -33,7 +33,7 @@ jobs:
         run: |
           pip install --no-cache-dir -r requirements.txt pytest pytest-cov pytest-mock cyclonedx-bom
           python3 -m pytest tests/ -q --cov=. --cov-report=xml:coverage.xml || true
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: void42/ci-actions
           path: .ci-actions
@@ -62,7 +62,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Setup Docker
         run: curl -fsSL https://nexus.void42.internal/repository/docker-releases/linux/static/stable/x86_64/docker-27.5.1.tgz | tar xz --strip-components=1 -C /usr/local/bin docker/docker
       - name: Build + push image
