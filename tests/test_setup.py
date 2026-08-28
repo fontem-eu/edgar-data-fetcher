@@ -13,6 +13,7 @@ Integration    – put synthetic CIK JSON fixtures on disk, enable local
 
 from __future__ import annotations
 
+import logging
 import os
 from pathlib import Path
 from unittest.mock import MagicMock
@@ -354,3 +355,130 @@ class TestTmpDirDownloadPattern:
         meta = yaml.safe_load((tmp_path / setup.METADATA_FILE_NAME).read_text())
         assert meta["status"] == "test"
         assert meta["foo"] == "bar"
+
+
+# ---------------------------------------------------------------------------
+# Helpers that had no coverage
+# ---------------------------------------------------------------------------
+
+class TestSizeStr:
+    """_size_str is what tells an operator whether a 40 GB download actually
+    landed. Its unit loop returns before dividing, so an off-by-one there
+    reports 1024 B instead of 1.0 KB — plausible-looking and wrong."""
+
+    def test_missing_path_is_zero_not_an_error(self, tmp_path):
+        assert setup._size_str(tmp_path / "nope") == "0 B"
+
+    def test_file_size_is_reported_directly(self, tmp_path):
+        f = tmp_path / "a.bin"
+        f.write_bytes(b"x" * 512)
+        assert setup._size_str(f) == "512.0 B"
+
+    def test_directory_sums_its_files_recursively(self, tmp_path):
+        (tmp_path / "sub").mkdir()
+        (tmp_path / "a.bin").write_bytes(b"x" * 1000)
+        (tmp_path / "sub" / "b.bin").write_bytes(b"x" * 24)
+        assert setup._size_str(tmp_path) == "1.0 KB"
+
+    def test_the_unit_boundary_rolls_over_at_1024(self, tmp_path):
+        """1023 B stays bytes; 1024 B must become 1.0 KB, not '1024.0 B'."""
+        just_under = tmp_path / "under.bin"
+        just_under.write_bytes(b"x" * 1023)
+        assert setup._size_str(just_under) == "1023.0 B"
+        exact = tmp_path / "exact.bin"
+        exact.write_bytes(b"x" * 1024)
+        assert setup._size_str(exact) == "1.0 KB"
+
+    def test_scales_through_the_units(self, tmp_path):
+        f = tmp_path / "big.bin"
+        f.write_bytes(b"x" * (5 * 1024 * 1024))
+        assert setup._size_str(f) == "5.0 MB"
+
+    def test_directories_ignore_subdirectory_entries(self, tmp_path):
+        """rglob('*') yields directories too; only files may be summed or
+        st_size on a directory inflates the total by the inode size."""
+        for i in range(3):
+            d = tmp_path / f"d{i}"
+            d.mkdir()
+        (tmp_path / "only.bin").write_bytes(b"x" * 100)
+        assert setup._size_str(tmp_path) == "100.0 B"
+
+
+class TestConfigureLogging:
+    """Repeated setup must not stack handlers — that is how one log line
+    becomes three."""
+
+    def test_verbosity_selects_the_mapped_level(self):
+        for verbosity, expected in setup.VERBOSITY_TO_LEVEL.items():
+            setup._configure_logging(verbosity)
+            assert setup.log.level == expected
+
+    def test_unknown_verbosity_falls_back_to_info(self):
+        setup._configure_logging(99)
+        assert setup.log.level == logging.INFO
+
+    def test_handlers_are_replaced_not_appended(self):
+        setup._configure_logging(1)
+        setup._configure_logging(1)
+        setup._configure_logging(1)
+        assert len(setup.log.handlers) == 1
+
+    def test_propagation_is_disabled(self):
+        """Without this the root logger emits every line a second time."""
+        setup._configure_logging(1)
+        assert setup.log.propagate is False
+
+
+class TestPrintSummary:
+    """The on-disk summary an operator reads to decide whether a download
+    worked. A layer that exists but is empty must read as missing — saying
+    'present' there sends someone off to debug the wrong thing."""
+
+    @staticmethod
+    def _render(tmp_path, mode="smoke"):
+        import io
+        from rich.console import Console
+        buf = io.StringIO()
+        # print_summary builds its own Console; swap in one we can read.
+        original = setup.Console
+        setup.Console = lambda *a, **k: Console(file=buf, width=200)
+        try:
+            setup.print_summary(tmp_path, mode)
+        finally:
+            setup.Console = original
+        return buf.getvalue()
+
+    def test_every_layer_is_listed(self, tmp_path):
+        out = self._render(tmp_path)
+        for layer in ("reference", "companyfacts", "submissions", "filings"):
+            assert layer in out
+
+    def test_absent_layer_reads_as_missing(self, tmp_path):
+        out = self._render(tmp_path)
+        assert "missing" in out
+        assert "present" not in out
+
+    def test_an_empty_directory_is_missing_not_present(self, tmp_path):
+        """The check is `any(path.iterdir())`, not `path.exists()` — a
+        directory created by a failed download is not data."""
+        (tmp_path / "reference").mkdir()
+        out = self._render(tmp_path)
+        assert "present" not in out
+
+    def test_a_populated_layer_reads_as_present_with_a_file_count(self, tmp_path):
+        ref = tmp_path / "reference"
+        ref.mkdir()
+        for i in range(3):
+            (ref / f"c{i}.json").write_text("{}")
+        out = self._render(tmp_path)
+        assert "present" in out
+        assert "3" in out
+
+    def test_mode_specific_hint_is_shown(self, tmp_path):
+        assert "facts" in self._render(tmp_path, mode="smoke")
+        assert "EntityFacts" in self._render(tmp_path, mode="facts")
+        assert "Full setup complete" in self._render(tmp_path, mode="full")
+
+    def test_unknown_mode_prints_no_hint(self, tmp_path):
+        out = self._render(tmp_path, mode="nonsense")
+        assert "Next:" not in out

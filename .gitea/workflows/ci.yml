@@ -26,6 +26,18 @@ jobs:
     runs-on: python
     steps:
       - uses: actions/checkout@v7
+      # Fetched BEFORE the reports are generated, deliberately.
+      # actions/checkout cleans the tree it checks out into, and
+      # coverage.xml / test-results.xml are both gitignored — so this
+      # step running afterwards deleted them, the scan found no report,
+      # and SonarQube recorded no coverage metric at all. An absent
+      # metric is skipped rather than failed, so the project sailed
+      # through a coverage gate while measuring nothing.
+      - uses: actions/checkout@v7
+        with:
+          repository: void42/ci-actions
+          path: .ci-actions
+          token: ${{ secrets.CI_READ_TOKEN }}
       - name: Install deps + generate coverage
         env:
           PIP_INDEX_URL: https://nexus.void42.internal/repository/pypi-proxy/simple/
@@ -40,11 +52,18 @@ jobs:
           # condition whose metric is absent is skipped rather than failed.
           python3 -m pytest tests/ -q \
             --cov=. --cov-report=xml:coverage.xml --junitxml=test-results.xml
-      - uses: actions/checkout@v7
-        with:
-          repository: void42/ci-actions
-          path: .ci-actions
-          token: ${{ secrets.CI_READ_TOKEN }}
+      - name: Verify the coverage report exists before scanning
+        # Without this the failure is invisible: the scan succeeds, the
+        # gate passes, and the dashboard simply shows no coverage.
+        run: |
+          set -euo pipefail
+          for f in coverage.xml test-results.xml; do
+            if [ ! -s "$f" ]; then
+              echo "::error::$f is missing or empty — the scan would report no coverage"
+              exit 1
+            fi
+          done
+          echo "coverage.xml $(wc -c < coverage.xml) bytes, test-results.xml $(wc -c < test-results.xml) bytes"
       - uses: ./.ci-actions/actions/sonar-scan
         with:
           sonar-token: ${{ secrets.SONAR_TOKEN }}
