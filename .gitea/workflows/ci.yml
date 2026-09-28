@@ -48,22 +48,6 @@ jobs:
       - uses: ./.ci-actions/actions/sonar-scan
         with:
           sonar-token: ${{ secrets.SONAR_TOKEN }}
-      - name: Generate SBOM (resolved versions from installed env)
-        # `cyclonedx-py environment` walks the resolved venv tree
-        # (pinned versions per pip's actual resolution); the older
-        # `cyclonedx-py requirements` form captures the unpinned
-        # `>=` ranges only, which DT can't match to CVEs.
-        run: cyclonedx-py environment --of json -o sbom.json
-      - name: Upload SBOM to Dependency-Track
-        run: |
-          curl -fsS -X POST "http://dependency-track.dependency-track.svc.cluster.local:8080/api/v1/bom" \
-            -H "X-Api-Key: ${{ secrets.DTRACK_API_KEY }}" \
-            -H "Content-Type: multipart/form-data" \
-            -F "projectName=edgar-data-fetcher" \
-            -F "projectVersion=v$(git rev-parse --short HEAD)" \
-            -F "autoCreate=true" \
-            -F "bom=@sbom.json"
-
   build-deploy:
     needs: test
     if: github.ref == 'refs/heads/main'
